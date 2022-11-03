@@ -1,6 +1,18 @@
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
+import { getCats } from '../services/cats';
 
 export default function Home() {
+  const [cats, setCats] = useState([]);
+
+  useEffect(() => {
+    if (cats.length === 0) {
+      getCats().then((res) => setCats(res));
+    }
+  }, [cats]);
+
+  console.log(cats);
+
   return (
     <div>
       <Head>
