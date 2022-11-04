@@ -1,15 +1,10 @@
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
+import { useCats } from '../hooks/useCats';
 import { getCats } from '../services/cats';
 
 export default function Home() {
-  const [cats, setCats] = useState([]);
-
-  useEffect(() => {
-    if (cats.length === 0) {
-      getCats().then((res) => setCats(res));
-    }
-  }, [cats]);
+  const { cats } = useCats();
 
   console.log(cats);
 
