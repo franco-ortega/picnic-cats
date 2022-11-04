@@ -1,15 +1,5 @@
-import Head from 'next/head';
-import { useEffect, useState } from 'react';
-import { useCats } from '../hooks/useCats';
+import Home from '../components/home/Home';
 
-export default function Home() {
-  const { cats } = useCats();
-
-  console.log(cats);
-
-  return (
-    <div>
-      <main>Picnic</main>
-    </div>
-  );
+export default function HomePage() {
+  return <Home />;
 }
