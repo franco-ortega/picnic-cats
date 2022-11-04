@@ -1,17 +1,11 @@
-import { useState } from 'react';
 import { useCats } from '../../hooks/useCats';
+import { usePicnicCats } from '../../hooks/usePicnicCats';
 import CatList from '../cats/CatList';
 import PicnicCatList from '../cats/PicnicCatList';
 
 const Home = () => {
   const { cats } = useCats();
-  const [picnicCats, setPicnicCats] = useState([]);
-
-  const addPicnicCat = (cat) => {
-    setPicnicCats((prevState) => {
-      return [...prevState, cat];
-    });
-  };
+  const { picnicCats, addPicnicCat } = usePicnicCats();
 
   return (
     <div>
