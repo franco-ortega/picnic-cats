@@ -1,8 +1,9 @@
 import Cat from './Cat';
+import styles from './CatList.module.scss';
 
 const CatList = ({ cats }) => {
   return (
-    <ul>
+    <ul className={styles.CatList}>
       {cats.map((cat) => (
         <li key={cat.id}>
           <Cat url={cat.url} />

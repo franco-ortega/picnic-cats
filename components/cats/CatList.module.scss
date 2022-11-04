@@ -1,0 +1,13 @@
+.CatList {
+  width: fit-content;
+  margin-inline: auto;
+
+  @media (min-width: 400px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,10 +1,13 @@
 import Image from 'next/image';
-import React from 'react';
 
 const Cat = ({ url }) => {
+  const onCatClick = () => {
+    console.log('Meow');
+  };
+
   return (
-    <button>
-      <Image src={url} alt='' width='200' height={200} />
+    <button onClick={onCatClick}>
+      <Image src={url} alt='' width={200} height={200} priority />
     </button>
   );
 };
