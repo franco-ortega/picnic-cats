@@ -5,11 +5,15 @@ import PicnicCatList from '../cats/PicnicCatList';
 
 const Home = () => {
   const { cats } = useCats();
-  const { picnicCats, addPicnicCat } = usePicnicCats();
+  const { picnicCats, addPicnicCat, picnicCatCount } = usePicnicCats();
 
   return (
     <div>
-      <CatList cats={cats} addPicnicCat={addPicnicCat} />
+      <CatList
+        cats={cats}
+        addPicnicCat={addPicnicCat}
+        picnicCatCount={picnicCatCount}
+      />
       <PicnicCatList picnicCats={picnicCats} />
     </div>
   );

@@ -9,5 +9,7 @@ export const usePicnicCats = () => {
     });
   };
 
-  return { picnicCats, addPicnicCat };
+  const picnicCatCount = picnicCats.length;
+
+  return { picnicCats, addPicnicCat, picnicCatCount };
 };
