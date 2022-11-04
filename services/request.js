@@ -6,14 +6,11 @@ const request = async (method, path, data) => {
     ? {}
     : { 'Content-Type': 'application/json' };
 
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}${process.env.NEXT_PUBLIC_API_KEY}`,
-    {
-      method,
-      headers,
-      body: JSON.stringify(data)
-    }
-  ).then((res) => res.json());
+  const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/${path}`, {
+    method,
+    headers,
+    body: JSON.stringify(data)
+  }).then((res) => res.json());
 
   return response;
 };
