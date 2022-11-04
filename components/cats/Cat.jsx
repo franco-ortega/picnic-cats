@@ -1,8 +1,9 @@
 import Image from 'next/image';
 
-const Cat = ({ url }) => {
+const Cat = ({ id, url, addPicnicCat }) => {
   const onCatClick = () => {
-    console.log('Meow');
+    console.log('Meow', id);
+    addPicnicCat(url);
   };
 
   return (
