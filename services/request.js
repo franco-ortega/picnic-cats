@@ -1,7 +1,6 @@
 const METHODS_WITHOUT_BODY = ['GET', 'DELETE'];
 
 const request = async (method, path, data) => {
-  console.log(process.env.API_URL);
   const headers = METHODS_WITHOUT_BODY.includes(method)
     ? {}
     : { 'Content-Type': 'application/json' };
