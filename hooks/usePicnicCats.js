@@ -11,5 +11,5 @@ export const usePicnicCats = () => {
 
   const picnicCatCount = picnicCats.length;
 
-  return { picnicCats, addPicnicCat, picnicCatCount };
+  return { picnicCats, addPicnicCat, picnicCatCount, setPicnicCats };
 };

@@ -14,5 +14,5 @@ export const useCats = () => {
     }
   }, [cats]);
 
-  return { cats, loading };
+  return { cats, setCats, loading };
 };

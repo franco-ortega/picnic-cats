@@ -1,7 +1,13 @@
 import PicnicCat from './PicnicCat';
 import styles from './PicnicCatList.module.scss';
 
-const PicnicCatList = ({ picnicCats }) => {
+const PicnicCatList = ({ picnicCats, setCats, setPicnicCats }) => {
+  console.log(setCats);
+  const onPlayAgainClick = () => {
+    setCats([]);
+    setPicnicCats([]);
+  };
+
   return (
     <div className={styles.PicnicCatList}>
       <h2>Picnic Crew</h2>
@@ -12,6 +18,8 @@ const PicnicCatList = ({ picnicCats }) => {
           </li>
         ))}
       </ul>
+
+      <button onClick={onPlayAgainClick}>Play Again</button>
     </div>
   );
 };
