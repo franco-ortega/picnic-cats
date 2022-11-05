@@ -7,7 +7,7 @@ const PicnicCat = ({ url, index }) => {
   return (
     <li className={styles.PicnicCat}>
       <p>Meow {message}!</p>
-      <Image src={url} alt='' width={200} height={200} priority />
+      <Image src={url} alt='' width={175} height={175} priority />
     </li>
   );
 };

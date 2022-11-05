@@ -4,7 +4,6 @@ import styles from './Cat.module.scss';
 
 const Cat = ({ url, addPicnicCat }) => {
   const [selected, setSelected] = useState(false);
-  console.log(url, selected);
 
   const onCatClick = () => {
     addPicnicCat(url);
