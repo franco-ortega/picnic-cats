@@ -10,11 +10,7 @@ const Home = () => {
   return (
     <div>
       {picnicCatCount < 3 ? (
-        <CatList
-          cats={cats}
-          addPicnicCat={addPicnicCat}
-          picnicCatCount={picnicCatCount}
-        />
+        <CatList cats={cats} addPicnicCat={addPicnicCat} />
       ) : (
         <PicnicCatList picnicCats={picnicCats} />
       )}
