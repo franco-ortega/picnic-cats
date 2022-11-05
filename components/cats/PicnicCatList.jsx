@@ -6,9 +6,9 @@ const PicnicCatList = ({ picnicCats }) => {
     <div className={styles.PicnicCatList}>
       <h2>Selected Cats</h2>
       <ul>
-        {picnicCats.map((picnicCat) => (
+        {picnicCats.map((picnicCat, i) => (
           <li key={picnicCat}>
-            <PicnicCat url={picnicCat} />
+            <PicnicCat url={picnicCat} index={i} />
           </li>
         ))}
       </ul>
