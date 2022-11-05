@@ -14,5 +14,10 @@ export const useCats = () => {
     }
   }, [cats]);
 
-  return { cats, setCats, loading };
+  const resetCats = () => {
+    setCats([]);
+    setLoading(true);
+  };
+
+  return { cats, loading, resetCats };
 };

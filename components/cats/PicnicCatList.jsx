@@ -1,10 +1,9 @@
 import PicnicCat from './PicnicCat';
 import styles from './PicnicCatList.module.scss';
 
-const PicnicCatList = ({ picnicCats, setCats, setPicnicCats }) => {
-  console.log(setCats);
+const PicnicCatList = ({ picnicCats, setPicnicCats, resetCats }) => {
   const onPlayAgainClick = () => {
-    setCats([]);
+    resetCats();
     setPicnicCats([]);
   };
 
@@ -13,9 +12,7 @@ const PicnicCatList = ({ picnicCats, setCats, setPicnicCats }) => {
       <h2>Picnic Crew</h2>
       <ul>
         {picnicCats.map((picnicCat, i) => (
-          <li key={picnicCat}>
-            <PicnicCat url={picnicCat} index={i} />
-          </li>
+          <PicnicCat key={picnicCat} url={picnicCat} index={i} />
         ))}
       </ul>
 

@@ -5,7 +5,7 @@ import PicnicCatList from '../cats/PicnicCatList';
 import Loading from '../loading/Loading';
 
 const Home = () => {
-  const { cats, setCats, loading } = useCats();
+  const { cats, loading, resetCats } = useCats();
   const { picnicCats, addPicnicCat, picnicCatCount, setPicnicCats } =
     usePicnicCats();
 
@@ -22,8 +22,8 @@ const Home = () => {
       ) : (
         <PicnicCatList
           picnicCats={picnicCats}
-          setCats={setCats}
           setPicnicCats={setPicnicCats}
+          resetCats={resetCats}
         />
       )}
     </div>
