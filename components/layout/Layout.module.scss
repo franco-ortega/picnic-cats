@@ -5,6 +5,12 @@
   min-height: 100vh;
   padding: 1rem;
 
+  header {
+    border-bottom: 0.1rem gray solid;
+    width: min(90%, 50rem);
+    margin-inline: auto;
+  }
+
   h1 {
     width: fit-content;
     margin-inline: auto;

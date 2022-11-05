@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
       <header>
         <h1>Picnic Cats</h1>
       </header>
+
       <main>{children}</main>
     </div>
   );
