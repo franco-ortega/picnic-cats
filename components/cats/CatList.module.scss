@@ -9,6 +9,11 @@
     padding-bottom: 1rem;
   }
 
+  p {
+    width: fit-content;
+    margin-inline: auto;
+  }
+
   @media (min-width: 400px) {
     ul {
       display: grid;

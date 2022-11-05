@@ -7,6 +7,7 @@ const CatList = ({ cats, addPicnicCat, picnicCatCount }) => {
   return (
     <div className={styles.CatList}>
       <h2>Kitty Contenders</h2>
+      <p>Who {message}?</p>
       <ul>
         {cats.map((cat) => (
           <li key={cat.id}>
@@ -14,7 +15,6 @@ const CatList = ({ cats, addPicnicCat, picnicCatCount }) => {
           </li>
         ))}
       </ul>
-      {message}
     </div>
   );
 };
