@@ -9,12 +9,15 @@ const Home = () => {
 
   return (
     <div>
-      <CatList
-        cats={cats}
-        addPicnicCat={addPicnicCat}
-        picnicCatCount={picnicCatCount}
-      />
-      <PicnicCatList picnicCats={picnicCats} />
+      {picnicCatCount < 3 ? (
+        <CatList
+          cats={cats}
+          addPicnicCat={addPicnicCat}
+          picnicCatCount={picnicCatCount}
+        />
+      ) : (
+        <PicnicCatList picnicCats={picnicCats} />
+      )}
     </div>
   );
 };
