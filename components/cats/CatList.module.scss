@@ -12,11 +12,13 @@
   p {
     width: fit-content;
     margin-inline: auto;
+    margin-bottom: 1rem;
   }
 
   ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   @media (min-width: 700px) {

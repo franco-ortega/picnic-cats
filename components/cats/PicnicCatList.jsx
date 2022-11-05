@@ -4,7 +4,7 @@ import styles from './PicnicCatList.module.scss';
 const PicnicCatList = ({ picnicCats }) => {
   return (
     <div className={styles.PicnicCatList}>
-      <h2>Selected Cats</h2>
+      <h2>Picnic Crew</h2>
       <ul>
         {picnicCats.map((picnicCat, i) => (
           <li key={picnicCat}>
