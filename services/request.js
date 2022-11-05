@@ -5,7 +5,7 @@ const request = async (method, path, data) => {
     ? {}
     : { 'Content-Type': 'application/json' };
 
-  const response = await fetch(`${path}`, {
+  const response = await fetch(path, {
     method,
     headers,
     body: JSON.stringify(data)
