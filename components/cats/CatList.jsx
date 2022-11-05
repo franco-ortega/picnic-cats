@@ -1,7 +1,9 @@
+import { useMessage } from '../../hooks/useMessage';
 import Cat from './Cat';
 import styles from './CatList.module.scss';
 
-const CatList = ({ cats, addPicnicCat }) => {
+const CatList = ({ cats, addPicnicCat, picnicCatCount }) => {
+  const { message } = useMessage(picnicCatCount);
   return (
     <div className={styles.CatList}>
       <h2>Kitty Contenders</h2>
@@ -12,6 +14,7 @@ const CatList = ({ cats, addPicnicCat }) => {
           </li>
         ))}
       </ul>
+      {message}
     </div>
   );
 };
