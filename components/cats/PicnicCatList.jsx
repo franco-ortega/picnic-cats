@@ -1,10 +1,10 @@
 import PicnicCat from './PicnicCat';
 import styles from './PicnicCatList.module.scss';
 
-const PicnicCatList = ({ picnicCats, setPicnicCats, resetCats }) => {
+const PicnicCatList = ({ picnicCats, resetPicnicCats, resetCats }) => {
   const onPlayAgainClick = () => {
     resetCats();
-    setPicnicCats([]);
+    resetPicnicCats();
   };
 
   return (

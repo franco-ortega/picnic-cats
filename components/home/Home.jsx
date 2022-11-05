@@ -6,7 +6,7 @@ import Loading from '../loading/Loading';
 
 const Home = () => {
   const { cats, loading, resetCats } = useCats();
-  const { picnicCats, addPicnicCat, picnicCatCount, setPicnicCats } =
+  const { picnicCats, addPicnicCat, picnicCatCount, resetPicnicCats } =
     usePicnicCats();
 
   return (
@@ -22,7 +22,7 @@ const Home = () => {
       ) : (
         <PicnicCatList
           picnicCats={picnicCats}
-          setPicnicCats={setPicnicCats}
+          resetPicnicCats={resetPicnicCats}
           resetCats={resetCats}
         />
       )}
