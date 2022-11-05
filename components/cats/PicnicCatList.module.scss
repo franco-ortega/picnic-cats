@@ -9,15 +9,9 @@
     padding-bottom: 1rem;
   }
 
-  @media (min-width: 400px) {
-    ul {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
   @media (min-width: 700px) {
     ul {
+      display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
   }

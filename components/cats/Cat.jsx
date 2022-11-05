@@ -4,7 +4,7 @@ const Cat = ({ url, addPicnicCat }) => {
   const onCatClick = () => addPicnicCat(url);
   return (
     <button onClick={onCatClick}>
-      <Image src={url} alt='' width={200} height={200} priority />
+      <Image src={url} alt='' width={150} height={150} priority />
     </button>
   );
 };
