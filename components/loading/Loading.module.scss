@@ -1,0 +1,17 @@
+.Loading {
+  margin-block: 2rem;
+
+  font-size: 2rem;
+  text-align: center;
+
+  animation: slideDown 1000ms linear infinite alternate;
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(10rem);
+    }
+  }
+}
