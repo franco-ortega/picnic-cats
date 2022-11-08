@@ -11,13 +11,14 @@ const Cat = ({ url, addPicnicCat }) => {
   };
 
   return (
-    <button
-      className={styles.Cat}
-      style={selected ? { visibility: 'hidden', borderColor: 'white' } : null}
-      onClick={onCatClick}
-    >
-      <Image src={url} alt='' width={150} height={150} priority />
-    </button>
+    <div className={styles.Cat}>
+      <button
+        style={selected ? { visibility: 'hidden', borderColor: 'white' } : null}
+        onClick={onCatClick}
+      >
+        <Image src={url} alt='' width={150} height={150} priority />
+      </button>
+    </div>
   );
 };
 
